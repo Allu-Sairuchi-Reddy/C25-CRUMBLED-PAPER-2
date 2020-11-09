@@ -17,8 +17,6 @@ function setup() {
 	engine = Engine.create();
 	world = engine.world;
 
-  op= new Paper(40,400,5,8);
-
  right=createSprite(1200,460,20,200);
  right.shapeColor=("red");
  righ=Bodies.rectangle(1200,460,20,200,{isStatic:true});
@@ -42,7 +40,7 @@ function setup() {
   bin=createSprite(1100,450,300,40);
 bin.addImage(bini);
 bin.scale=1.2;
-   
+   op= new Paper(40,400,5,8);
    Engine.run(engine);
   
 }
