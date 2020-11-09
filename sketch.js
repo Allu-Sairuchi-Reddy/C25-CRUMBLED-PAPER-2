@@ -41,8 +41,6 @@ function setup() {
   bin.addImage(bini);
   bin.scale=1.2;
   op= new Paper(40,400,5,8);
-  bin.depth=op.depth;
-  op.depth=op.depth++
 	
    Engine.run(engine);
   
@@ -52,6 +50,8 @@ function setup() {
 function draw() {
   rectMode(CENTER);
   background(0);
+  bin.depth=op.depth;
+  op.depth=op.depth++
   bin.display();
   op.display();
   drawSprites();
