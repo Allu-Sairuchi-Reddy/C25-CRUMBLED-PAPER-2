@@ -26,7 +26,7 @@ function setup() {
 
  left=createSprite(1000,460,20,200);
  left.shapeColor=("red");
- lef=Bodies.rectangle(1200,460,20,200,{isStatic:true});
+ lef=Bodies.rectangle(1000,460,20,200,{isStatic:true});
  World.add(world,lef);
 
   bottom=createSprite(1100,560,200,20);
@@ -51,8 +51,8 @@ bin.scale=1.2;
 function draw() {
   rectMode(CENTER);
   background(0);
-  op.display();
   bin.display();
+  op.display();
   drawSprites();
  }
 
