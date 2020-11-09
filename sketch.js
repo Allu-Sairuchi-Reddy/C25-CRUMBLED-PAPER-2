@@ -38,9 +38,12 @@ function setup() {
   World.add(world,go)
   
   bin=createSprite(1100,450,300,40);
-bin.addImage(bini);
-bin.scale=1.2;
-   op= new Paper(40,400,5,8);
+  bin.addImage(bini);
+  bin.scale=1.2;
+  op= new Paper(40,400,5,8);
+  bin.depth=op.depth;
+  op.depth=op.depth++
+	
    Engine.run(engine);
   
 }
