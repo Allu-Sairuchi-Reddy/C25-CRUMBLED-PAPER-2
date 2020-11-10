@@ -50,11 +50,9 @@ function setup() {
 function draw() {
   rectMode(CENTER);
   background(0);
-  bin.depth=op.depth;
-  op.depth=op.depth++
   bin.display();
-  op.display();
   drawSprites();
+  op.display();
  }
 
  function keyPressed() {
